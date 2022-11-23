@@ -1,0 +1,10 @@
+name=Dac80501 Library
+version=1.0.0
+author=Juergen Goldmann
+maintainer=Juergen Goldmann <raibisch@gmail.com>
+sentence=Arduino library for Dac80501 (SPI-Bus)
+paragraph=Arduino library for  Dac80501 (SPI-Bus)
+category=Signal Input/Output
+url=https://github.com/raibisch/Dac80501
+architectures=*
+depends=SPI
