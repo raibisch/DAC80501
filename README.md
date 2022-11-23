@@ -1,6 +1,6 @@
 #  DAC80501 Library
 
-This is a library for the TI ADC80501 16bit analog digital converter
+This is a library for the TI DAC80501 16bit digital analog converter
 (until now only the SPI bus connection is supported by this lib)
 
 ## Helpful Infos
