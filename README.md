@@ -48,4 +48,4 @@ dac.setREG4_DivGain(SET4_DIV2,SET4_GAIN2);
 ``` 
 
 # Remark for Hardware-Design
-In some cases the spi data transfer does work. I have good results with a 330 Ohm resistor in the 'SCLK' and 'MISO' (and CS) line to reduce signal reflections.
+In some cases the spi data transfer does not work. I have good results with a 330 Ohm resistor in the 'SCLK' and 'MISO' (and CS) line to reduce signal reflections.
