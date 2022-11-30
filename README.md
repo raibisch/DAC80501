@@ -7,6 +7,7 @@ This is a library for the TI DAC80501 16bit digital analog converter
 (until now only the SPI bus connection is supported by this lib)
 ## Helpful Infos
 https://e2e.ti.com/support/data-converters-group/data-converters/f/data-converters-forum/968246/dac80501-spi
+
 https://www.ti.com/product/DAC80501
 ## Author
 Jürgen Goldmann
