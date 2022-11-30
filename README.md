@@ -7,12 +7,11 @@ This is a library for the TI DAC80501 16bit digital analog converter
 https://e2e.ti.com/support/data-converters-group/data-converters/f/data-converters-forum/968246/dac80501-spi
 https://www.ti.com/product/DAC80501
 
-
 ## Author
-Juergen Goldmann
+Jürgen Goldmann
 
 ## Licence
-GNU Lesser General Public License v3 (LGPL-3.0)
+[Licensed under the European Union Public License (EUPL)-1.2-or-later](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)
 
 ## Download and Installation
 To download click the DOWNLOAD ZIP button, rename the uncompressed folder Dac80501. Check that the ADC80501 folder contains Dac80501.cpp and Dac80501.h
@@ -26,7 +25,6 @@ Add in 'platform.ini' (no need to download before)
 lib_deps =
   https://github.com/raibisch/adc80501
 ```
-
 # Remark for Software-Design 
 MOSI signal was not used, because of one way data transfer from slave to master, but defined as 'dummy' pin in CPU.
 Tested with ESP32, ESP-S2 and ESP-S3
@@ -46,6 +44,5 @@ dac.setREG4_DivGain(SET4_DIV2,SET4_GAIN2);
 ```
  dac.writeDAC(0xffff);
 ``` 
-
 # Remark for Hardware-Design
 In some cases the spi data transfer does not work. I have good results with a 330 Ohm resistor in the 'SCLK' and 'MISO' (and CS) line to reduce signal reflections.
