@@ -1,4 +1,4 @@
-#  DAC80501 Library
+#  DAC80501 Arduino Library
 
 This is a library for the TI DAC80501 16bit digital analog converter
 (until now only the SPI bus connection is supported by this lib)
