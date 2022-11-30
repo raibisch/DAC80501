@@ -1,24 +1,21 @@
 #  DAC80501 Arduino Library
+[![GitHub version](https://img.shields.io/github/release/raibisch/DAC80501.svg)](https://github.com/raibisch/Dac80501/archive/refs/heads/master.zip)
+[![License](https://img.shields.io/badge/license-EUPL1.2-green)](license/LICENSE.md)
+[![donate](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://www.paypal.com/paypalme/goldmannjuergen)
 
 This is a library for the TI DAC80501 16bit digital analog converter
 (until now only the SPI bus connection is supported by this lib)
-
 ## Helpful Infos
 https://e2e.ti.com/support/data-converters-group/data-converters/f/data-converters-forum/968246/dac80501-spi
 https://www.ti.com/product/DAC80501
-
 ## Author
 Jürgen Goldmann
-
 ## Licence
 [Licensed under the European Union Public License (EUPL)-1.2-or-later](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)
-
 ## Download and Installation
 To download click the DOWNLOAD ZIP button, rename the uncompressed folder Dac80501. Check that the ADC80501 folder contains Dac80501.cpp and Dac80501.h
-
 ### Arduino IDE
 Place the Dac80501 library folder your arduinosketchfolder/libraries/ folder. You may need to create the libraries subfolder if its your first library. Restart the IDE.
-
 ### Platform IO
 Add in 'platform.ini' (no need to download before)
 ```
