@@ -31,11 +31,11 @@
 
 
 
-class Dac80501
+class DAC80501
 {
   public:
-    Dac80501 ();
-    ~Dac80501 ();
+    DAC80501 ();
+    ~DAC80501 ();
     void begin(SPIClass *port, uint8_t clk_pin, uint8_t miso_pin, uint8_t mosi_pin, uint8_t cs_pin);
     void end ();
     
