@@ -9,21 +9,21 @@
 
 #include <Arduino.h>
 #include <SPI.h>
-#include "Dac80501.h"
+#include "DAC80501.h"
 
 
 /**
  * @brief Construct a new Dac80501 object - not needed by Arduino but for complete class. does not do anything.
  * 
  */
-Dac80501::Dac80501()
+DAC80501::DAC80501()
 {
 }
 
 /*-----------------------------
 destructor for class, not needed by Arduino but for complete class. Calls Arduino end function
 */
-Dac80501::~Dac80501()
+DAC80501::~DAC80501()
 {
   spi_port->end();
 }
@@ -36,7 +36,7 @@ Dac80501::~Dac80501()
  * @param b1      HIGH-byte
  * @param b2      LOW-byte
  */
-void Dac80501::writeREG(uint8_t command, uint8_t b1, uint8_t b2)
+void DAC80501::writeREG(uint8_t command, uint8_t b1, uint8_t b2)
 {
   digitalWrite(DacCsPin,HIGH);
   delay(1);
@@ -57,7 +57,7 @@ void Dac80501::writeREG(uint8_t command, uint8_t b1, uint8_t b2)
  * @param gain gain=1->SET4_GAIN1  
  *             gain=2->SET4_GAIN2
  */
-void Dac80501::setREG4_DivGain(uint8_t div, uint8_t gain)
+void DAC80501::setREG4_DivGain(uint8_t div, uint8_t gain)
 {
    writeREG(REG4_DIVGAIN, div , gain); 
 }
@@ -65,7 +65,7 @@ void Dac80501::setREG4_DivGain(uint8_t div, uint8_t gain)
 /**
  * @brief soft reset for DAC
  */
-void Dac80501::setREG5_Reset()
+void DAC80501::setREG5_Reset()
 {
    writeREG(REG5_RESET, 0b00000000 ,0b00001010); // Soft Reset
 }
@@ -75,7 +75,7 @@ void Dac80501::setREG5_Reset()
  * @brief write analog value to output register
  * @param data 16bit analog output value
  */
-void Dac80501::writeDAC(uint16_t data)
+void DAC80501::writeDAC(uint16_t data)
 {
   digitalWrite(DacCsPin,LOW);
   spi_port->write(REG8_DAC);
@@ -88,7 +88,7 @@ void Dac80501::writeDAC(uint16_t data)
  *        
  * @param cspeed value in Hz
  */
-void Dac80501::setClockSpeed(uint32_t cspeed)
+void DAC80501::setClockSpeed(uint32_t cspeed)
 {
   spi_clock_speed = cspeed;
 }
@@ -102,7 +102,7 @@ void Dac80501::setClockSpeed(uint32_t cspeed)
  * @param mosi_pin MOSI-Pin
  * @param cs_pin   ChipSelect-Pin
  */
-void Dac80501::begin(SPIClass *port, uint8_t clk_pin, uint8_t miso_pin, uint8_t mosi_pin, uint8_t cs_pin)
+void DAC80501::begin(SPIClass *port, uint8_t clk_pin, uint8_t miso_pin, uint8_t mosi_pin, uint8_t cs_pin)
 {
   DacCsPin = cs_pin;
   spi_port = port;
@@ -122,7 +122,7 @@ void Dac80501::begin(SPIClass *port, uint8_t clk_pin, uint8_t miso_pin, uint8_t 
  * @brief Class end (mostly not needed)
  * 
  */
-void Dac80501::end()
+void DAC80501::end()
 {
   spi_port->end();
 }
