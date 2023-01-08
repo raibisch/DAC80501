@@ -14,7 +14,7 @@ Jürgen Goldmann
 ## Licence
 [Licensed under the European Union Public License (EUPL)-1.2-or-later](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)
 ## Download and Installation
-To download click the DOWNLOAD ZIP button, rename the uncompressed folder Dac80501. Check that the Dac80501 folder contains Dac80501.cpp and Dac80501.h
+To download click the DOWNLOAD ZIP button, rename the uncompressed folder Dac80501. Check that the Dac80501 folder contains DAC80501.cpp and DAC80501.h
 ### Arduino IDE
 Place the Dac80501 library folder your arduinosketchfolder/libraries/ folder. You may need to create the libraries subfolder if its your first library. Restart the IDE.
 ### Platform IO
@@ -28,7 +28,7 @@ MOSI signal was not used, because of one way data transfer from slave to master,
 Tested with ESP32, ESP-S2 and ESP-S3 - may also (not tested) work with other arduino CPUs
 ### Define
 ```
-Dac80501 dac;
+DAC80501 dac;
 ```
 ### Init
 ```
