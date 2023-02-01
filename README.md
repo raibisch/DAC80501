@@ -13,6 +13,10 @@ https://www.ti.com/product/DAC80501
 Jürgen Goldmann
 ## Licence
 [Licensed under the European Union Public License (EUPL)-1.2-or-later](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)
+
+[why licensed under EUPL-1.2: it is compatible to GPL and compatible to EU-rights and regulations](https://joinup.ec.europa.eu/collection/eupl/join-eupl-licensing-community)
+
+[compare different licences](https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/jla-find-and-compare-software-licenses)
 ## Download and Installation
 To download click the DOWNLOAD ZIP button, rename the uncompressed folder Dac80501. Check that the Dac80501 folder contains DAC80501.cpp and DAC80501.h
 ### Arduino IDE
